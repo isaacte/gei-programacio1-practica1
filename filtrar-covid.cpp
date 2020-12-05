@@ -7,6 +7,7 @@ int main() {
 
     scanf("%c", &caracter); //Escanegem el primer caràcter
     while( caracter != '#' ) { //Mentre no sigui el caràcter d'escapament
+        scanf("%c", &caracter);
         if (caracter == ',') //Com que em de trobar 'Llei' després d'una coma
             scanf("%c", &caracter);
                 if (caracter == 'L'){ //Comprovem si el següent caràcter és una L
@@ -28,6 +29,9 @@ int main() {
                             }
                         }
                 }
-        scanf("%c", &caracter); //Seguim escanejant
+         //Seguim escanejant
+
+        
    }
+   printf("#"); // Posem # per a tenir una sortida compatible amb l'entrada del següent programa (funciona amb makefile)
 }
