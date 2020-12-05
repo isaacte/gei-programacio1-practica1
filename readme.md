@@ -18,8 +18,12 @@ Població: `Lleida `
 S'analitzen tots els caràcters del fitxer diferents a `#` quan es troba el caràcter d'escapement el programa s'atura.
 Si el programa després d'una `, ` troba els caràcters `L`  `l` `e` `i` considera que aquella línea conté les dades que cerquem i mostra per pantalla el contingud de la línea a partir de la següent coma fins al canví de línia `\n`.
 Explicació gràfica:
+
 ![Explicació gràfica del funcionament del Programa 1](https://i.ibb.co/TgXGJQ5/Practica-Imatge1.png)
+
 El programa continua cercant la resta de línies fins trobar el caràcter d'escapament.
+### Comentari
+Com que no s'especifica la part que es vol mostrar, he considerat que es mostra a partir de la població, tot i això proposo també el programa `filtrar-covid-2` on només es mostren les dos últimes línies.
 ## Programa 2
 Llibreries utilitzades: `stdio.h`
 Grup de laboratori: `3` → `x=4`
@@ -28,13 +32,14 @@ Grup de laboratori: `3` → `x=4`
 Com que l'explicació de l'activitat no específica algunes qüestions, he considerat:
 
  - El fitxer `CSV` d'entrada és la sortida del `Programa 1`.
- - Si el nombre de dades en el fitxer d'entrada no és múltiple de `x` no es mostrarà ni es calcularà la mitjana de les últimes dades sobrants.
+ - Si el nombre de dades en el fitxer d'entrada no és múltiple de `x`, es calcularà la mitjana de les línies restants i es mostrarà per pantalla, sense importar l'interval.
 
 ### Funcionament
 Per a cada una de les línies del fitxer d'entrada s'ometen els valors anteriors a la 3ª `,`.
 Quan el problema ha escanejat 3 `,` en la línia (s'acumulen en la variable `comes` i es reinicia a 0 cada cop que en troba 3),  s'escanegen els següents caràcters com a `float`.  Aquest nombre es suma a la varaible `suma` declarada com a real (per a evitar una divisió d'enters) que per defecte s'inicialitza a `0` i cada cop que es tracta una línia incrementem la variable contador en 1. 
 Quan la variable contador arriba a `x`, es calcula la mitjana de la suma mitjançant la següent operació `suma/x` i la mostrem pantalla, posteriorment es posen a 0 el contador i la suma per analitzar el següent interval.
 Explicació gràfica:
+
 ![Explicació gràfica del funcionament del Programa 2](https://i.ibb.co/pJ47NFx/Practica-Imatge2.png)
 
 

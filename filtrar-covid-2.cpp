@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main() {
@@ -16,10 +17,13 @@ int main() {
                             if (caracter == 'e'){ //Comprovem si el següent caràcter és una e
                                 scanf("%c", &caracter);
                                 if (caracter == 'i'){ //Comprovem si el següent caràcter és una i
-                                //Mostrem tots els caràcters fins al final de la línea
-                                    do{
+                                    do{ //Omitim els caràcters fins arribar a la part desitjada
                                         scanf("%c", &caracter);
-                                    } while (caracter != ',');
+                                        if (caracter == ','){
+                                           contador ++;
+                                        }
+                                    } while (contador < 3);
+                                    contador = 0; //Reiniciem el contador per a la següent línia
                                     while (caracter != '\n'){
                                         scanf("%c", &caracter);
                                         printf("%c",caracter);

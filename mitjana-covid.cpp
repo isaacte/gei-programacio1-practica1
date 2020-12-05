@@ -26,4 +26,7 @@ int main() {
         scanf("%c", &caracter); //Llegim el salt de línea
         scanf("%c", &caracter); //Llegim el primer caràcter de la següent línea
     }
+    if (contador != 0){ //Si al arribar a la última línia encara queden elements que no hem fet la mitjana, la fem sense coniderar l'interval
+       printf("%.2f\n",suma/contador);
+    }
 }
