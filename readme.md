@@ -23,7 +23,7 @@ Explicació gràfica:
 
 El programa continua cercant la resta de línies fins trobar el caràcter d'escapament.
 ### Comentari
-Com que no s'especifica la part que es vol mostrar, he considerat que es mostra a partir de la població, tot i això proposo també el programa `filtrar-covid-2` on només es mostren les dos últimes línies.
+Com que no s'especifica la part que es vol mostrar, he considerat que es mostra a partir de la població, tot i això proposo també el programa `filtrar-covid-2` on només es mostren les dos últimes dades.
 ## Programa 2
 Llibreries utilitzades: `stdio.h`
 Grup de laboratori: `3` → `x=4`
